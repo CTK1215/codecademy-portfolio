@@ -1,0 +1,47 @@
+/* ===== Theme ===== */
+
+:root {
+    --bg: #0a0f0c;
+    --surface: #111814;
+    --border: #1f2b23;
+    --green: #3fdc73;
+    --text: #d3dad5;
+    --dim: 7f8c84;
+}
+
+/* ===== Base ===== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: ui-monospace, "Cascadia Code", Consolas, "Courier New", monospace;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+section {
+    padding: 3rem 1.25rem;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    color: var(--green);
+}
+
+a {
+    color: var(--green);
+}
