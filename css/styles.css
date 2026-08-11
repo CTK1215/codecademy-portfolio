@@ -6,7 +6,7 @@
     --border: #1f2b23;
     --green: #3fdc73;
     --text: #d3dad5;
-    --dim: 7f8c84;
+    --dim: #7f8c84;
 }
 
 /* ===== Base ===== */
@@ -43,5 +43,44 @@ h1, h2, h3 {
 }
 
 a {
+    color: var(--green);
+}
+
+/* ===== Nav ===== */
+
+header {
+    position: sticky;
+    top: 0; 
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--border);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 1.25rem;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
     color: var(--green);
 }
