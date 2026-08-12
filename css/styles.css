@@ -36,6 +36,7 @@ img {
 
 section {
   padding: 3rem 1.25rem;
+  scroll-margin-top: 4rem;
 }
 
 h1,
@@ -378,3 +379,30 @@ section h2::before {
   text-decoration: underline;
 }
 
+@media (min-width: 768px) {
+  .nav-links {
+    gap: 1.5rem;
+  }
+  .nav-links a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 579px) and (max-width: 852px) {
+  .skill-group:last-child h3 {
+    text-align: center;
+  }
+  .skill-group:last-child ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .skill-group:last-child li::before {
+    content: none
+  }
+  .skill-group:last-child li + li::before {
+    content: "·";
+    margin-right: 0.5rem;
+  }
+}
