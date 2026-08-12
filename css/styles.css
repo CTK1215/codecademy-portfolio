@@ -319,3 +319,45 @@ section h2::before {
   gap: 1rem;
   margin-top: auto;
 }
+
+/* ===== Contact ===== */
+
+#contact {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+}
+
+.icon-link svg {
+  width: 28px;
+  height: 28px;
+  fill: var(--accent);
+}
+
+.icon-link span {
+  font-size: 0.8rem;
+  color: var(--dim);
+  transition: color 0.2s;
+}
+
+.icon-link:hover span {
+  color: var(--accent);
+  text-decoration: underline;
+}
